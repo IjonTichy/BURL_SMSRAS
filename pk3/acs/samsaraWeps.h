@@ -39,6 +39,7 @@ int ClassUniques[CLASSCOUNT][CHOICECOUNT_U] =
     {"DukePortJetpack",     "DukeJetpackFuel",  "", ""},
     {"Alien Weapon",        "UnknownAmmo",      " Alien Weapon ", "UnknownAmmo2"},
     {"Laser Cannon",        "Cell",             "", ""},
+    {"DoomguyBerserker",    "",                 "", ""},
 };
 
 int UniqueMaxes[CLASSCOUNT][CHOICECOUNT_U] = 
@@ -51,6 +52,7 @@ int UniqueMaxes[CLASSCOUNT][CHOICECOUNT_U] =
     {1,     100,    0,  0},
     {1,     50,     1,  50},
     {1,     0,      0,  0},
+    {0,     0,      0,  0},
 };
 
 int UniqueCounts[CLASSCOUNT][CHOICECOUNT_U] =
@@ -63,9 +65,10 @@ int UniqueCounts[CLASSCOUNT][CHOICECOUNT_U] =
     {-1,    -1,     -1, -1},
     {-1,    -1,     -1, -1},
     {-1,     0,     -1, -1},
+    {-1,    -1,     -1, -1},
 };
 
-int UniqueScripts[CLASSCOUNT] = {0, 0, 0, 0, 0, 0, SAMSARA_MARATHON, 0};
+int UniqueScripts[CLASSCOUNT] = {0, 0, 0, 0, 0, 0, SAMSARA_MARATHON, 0, 0};
 
 int ClassWeapons[CLASSCOUNT][SLOTCOUNT][CHOICECOUNT] = 
 {
@@ -171,6 +174,19 @@ int ClassWeapons[CLASSCOUNT][SLOTCOUNT][CHOICECOUNT] =
         {"Thunderbolt",                     "Cell",         "",             "ForceCheck", ""},
         {"Gauntlet",                        "",             "",             "", ""},
     },
+
+    {   // BURL TUMD
+        {" Fist ",                          "",             "",             "", ""},
+        {" Chainsaw ",                      "",             "",             "", ""},
+        {" Pistol ",                        "",             "",             "", ""},
+        {" Shotgun ",                       "Shell",        "",             "", ""},
+        {"Super Shotgun",                   "Shell",        "",             "", ""},
+        {" Chaingun ",                      "Clip",         "",             "", ""},
+        {"Rocket Launcher",                 "RocketAmmo",   "",             "", ""},
+        {"Plasma Rifle",                    "Cell",         "",             "", ""},
+        {"B.F.G. 9000",                     "Cell",         "",             "", ""},
+        {" Chainsaw ",                      "",             "",             "", ""},
+    },
 };
 
 int ClassScripts[CLASSCOUNT][SLOTCOUNT] = 
@@ -183,4 +199,5 @@ int ClassScripts[CLASSCOUNT][SLOTCOUNT] =
     {0,0,                   0,  0,0,0,0,0,0,0},
     {0,SAMSARA_MARATHON,    0,  SAMSARA_MARATHON,SAMSARA_MARATHON,SAMSARA_MARATHON,SAMSARA_MARATHON,SAMSARA_MARATHON,SAMSARA_MARATHON,0},
     {0,0,                   0,  0,0,0,0,0,SAMSARA_QUAKE,0},
+    {0,0,                   0,  0,0,0,0,0,0,0},
 };

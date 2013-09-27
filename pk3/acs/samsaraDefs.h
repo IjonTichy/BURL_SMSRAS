@@ -43,7 +43,7 @@
 
 #define SAMSARA_CL_VERSION          2601
 
-#define CLASSCOUNT          8
+#define CLASSCOUNT          9
 #define UNIQUECOUNT         2
 #define SLOTCOUNT           10
 #define TIPCOUNT            2
@@ -59,6 +59,7 @@
 #define CLASS_DUKE      5
 #define CLASS_MARATHON  6
 #define CLASS_QUAKE     7
+#define CLASS_BURL      8
 
 #define SPEED_FORWARD       15
 #define SPEED_SIDE          13
@@ -157,6 +158,7 @@ int PickupStates[CLASSCOUNT][8] =
     {"Dukeguy", "DukeFull",     "DukeEmpty",        "DukeSpecial",      "DukePunchdrunk",      "DukePDFull",       "DukePDEmpty",      "DukePDSpecial"},
     {"Marathon","MarathonFull", "MarathonEmpty",    "MarathonSpecial",  "MarathonPunchdrunk",  "MarathonPDFull",   "MarathonPDEmpty",  "MarathonPDSpecial"},
     {"Quake",   "QuakeFull",    "QuakeEmpty",       "QuakeSpecial",     "QuakePunchdrunk",     "QuakePDFull",      "QuakePDEmpty",     "QuakePDSpecial"},   
+    {"BURL",    "BURLFULL",     "BURLEMPTY",        "BURLSPECIAL",      "BURLPUNCHDRUNK",      "BURLPDFULL",       "BURLPDEMPTY",      "BURLPDSPECIAL"},    
 };
 
 int ItoSArray[7] = {1, 3, 4, 5, 6, 7, 8};
@@ -171,6 +173,7 @@ int ClassFades[CLASSCOUNT][5] =
     {255, 255, 0,   0.1, 5},
     {255, 255, 0,   0.1, 5},
     {0,   255, 0,   0.4, 8},
+    {255, 255, 0,   0.1, 5},
     {255, 255, 0,   0.1, 5},
 };
 
@@ -194,6 +197,7 @@ int LMSItems[CLASSCOUNT] =
     "",
     "PortGhostly",
     "WolfenAmmoCrate",
+    "",
     "",
     "",
     "",
@@ -225,6 +229,7 @@ int Tipboxes[CLASSCOUNT][TIPCOUNT] =
     {"DUKETIP1", "DUKETIP2"},
     {"MARATIP1", "MARATIP2"},
     {"QUAKTIP1", "QUAKTIP2"},
+    {"BURLTIP1", "BURLTIP2"},
 };
 
 
@@ -237,7 +242,7 @@ int DMTipboxes[CLASSCOUNT][TIPCOUNT] =
     {"", "HEXNTIP3"},
     {"", "DUKETIP3"},
     {"", "MARATIP3"},
-    {"", "QUAKTIP3"},
+    {"", "BURLTIP3"},
 };
 
 #define RESCOUNT 2
@@ -252,6 +257,7 @@ int ResonantItems[RESCOUNT][3] =
 
 int PeopleDieParticles[CLASSCOUNT] = 
 {
+    "DoomguysDieParticle",
     "DoomguysDieParticle",
     "DoomguysDieParticle",
     "DoomguysDieParticle",
@@ -281,6 +287,7 @@ int PeopleDiePulses[CLASSCOUNT] =
     "DoomguysDiePulse",
     "DoomguysDiePulse",
     "DoomguysDiePulse",
+    "DoomguysDiePulse",
     /*
     "ChexguysDiePulse",
     "CorvusDiesPulse",
@@ -302,6 +309,7 @@ int PeopleDieBlasts[CLASSCOUNT] =
     "DukeDiesWhenHeIsKilled",
     "ManathorDiesWhenHeIsKilled",
     "RangerDiesWhenHeIsKilled",
+    "YOUCANNOTKILLBURL",
 };
 
 int PDWTAKItems[PDWTAKCOUNT][2] = 
@@ -394,6 +402,7 @@ int PunchDrunkItems[CLASSCOUNT][2] =
     {"DukePunchDrunk",      "DukePunchUnique"},
     {"ManathorPunchDrunk",  "ManathorPunchUnique"},
     {"RangerPunchDrunk",    "RangerPunchUnique"},
+    {"BURLISPUNCHING",      "BURLGOODPUNCHING"},
 };
 
 
