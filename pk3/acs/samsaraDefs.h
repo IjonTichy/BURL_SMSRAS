@@ -146,6 +146,7 @@ int ClassItems[CLASSCOUNT] =
     "DukeClass",
     "MarathonClass",
     "QuakeClass",
+    "IAMBURLTUMD",
 };
 
 int PickupStates[CLASSCOUNT][8] = 
@@ -242,7 +243,7 @@ int DMTipboxes[CLASSCOUNT][TIPCOUNT] =
     {"", "HEXNTIP3"},
     {"", "DUKETIP3"},
     {"", "MARATIP3"},
-    {"", "BURLTIP3"},
+    {"", ""},
 };
 
 #define RESCOUNT 2
