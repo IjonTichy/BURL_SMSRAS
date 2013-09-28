@@ -10,3 +10,5 @@ actor BURLEVERYONE: PowerDamage
 
 #include "decorate/BURL/fist.dec"
 #include "decorate/BURL/pistol.dec"
+#include "decorate/BURL/slot1.dec"
+#include "decorate/BURL/slot2.dec"
