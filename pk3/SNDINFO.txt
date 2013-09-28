@@ -47,6 +47,8 @@ blackbirdtrustnoone			VOC14 // Haaaaack.
 samsara/shieldhit            sounds/samsara/shieldhit.wav
 marathon/shieldhit           sounds/samsara/shieldhit2.wav
 
+caco/deflate	deflate
+
 ////////////////////
 // Ally sounds for Strife's beacons
 ////////////////////
