@@ -29,18 +29,20 @@ int BeaconMonsters[CLASSCOUNT] =
     "FriendlyAlienTrooper",
     "FriendlyPfhorTrooper",
     "FriendlyGrunt",
+    "FriendlyDoomImp",
 };
 
 int AccuracyUniques[CLASSCOUNT][ACCURACYCOUNT] = 
 {
-    {"DoomZerkCounter",  "", "", "", "", "", "", "", "", ""},
-    {"ChexSoulsphere",   "", "", "", "", "", "", "", "", ""},
-    {"ArtiEgg2",         "", "", "", "", "", "", "", "", ""},
-    {"WolfExtraLife",    "", "", "", "", "", "", "", "", ""},
-    {"PortMysticAmbit",  "", "", "", "", "", "", "", "", ""},
-    {"DukeguyStrifeJet", "", "", "", "", "", "", "", "", ""},
-    {"RandAlienWeapon",  "", "", "", "", "", "", "", "", ""},
-    {"Thunderbolt",      "RangerMaxCells", "", "", "", "", "", "", "", ""},
+    {"DoomZerkCounter",     "", "", "", "", "", "", "", "", ""},
+    {"ChexSoulsphere",      "", "", "", "", "", "", "", "", ""},
+    {"ArtiEgg2",            "", "", "", "", "", "", "", "", ""},
+    {"WolfExtraLife",       "", "", "", "", "", "", "", "", ""},
+    {"PortMysticAmbit",     "", "", "", "", "", "", "", "", ""},
+    {"DukeguyStrifeJet",    "", "", "", "", "", "", "", "", ""},
+    {"RandAlienWeapon",     "", "", "", "", "", "", "", "", ""},
+    {"Thunderbolt",         "RangerMaxCells", "", "", "", "", "", "", "", ""},
+    {"Sharper Demonwhacker","", "", "", "", "", "", "", "", ""},
 };
 
 int DoomAccuracyZerks[ACCURACYCOUNT] = 
@@ -154,5 +156,17 @@ int AccuracyMessages[CLASSCOUNT][MSGCOUNT] =
         "Ia ia fhtagn, you flying squash.",
         "Ia ia fhtagn, you floating flower pot.",
         "Control the fucking weather.",
+    },
+    {
+        "Vorpal blade! Find some mythical beasts!",
+        "Hey, they got rid of this for a reason.",
+        "I don't remember what that reason is.",
+        "Now you have even more reason to camp the soulsphere!",
+        "Just don't get your head cut off.",
+        "What is it with melee weapons and sticking bits of skeleton on them?",
+        "The only weapon that benefits massively from not having a health cap!",
+        "",
+        "",
+        "",
     },
 };
