@@ -39,7 +39,7 @@ int ClassUniques[CLASSCOUNT][CHOICECOUNT_U] =
     {"DukePortJetpack",     "DukeJetpackFuel",  "", ""},
     {"Alien Weapon",        "UnknownAmmo",      " Alien Weapon ", "UnknownAmmo2"},
     {"Laser Cannon",        "Cell",             "", ""},
-    {"DoomguyBerserker",    "",                 "", ""},
+    {"BURLZERKAN",          "",                 "", ""},
 };
 
 int UniqueMaxes[CLASSCOUNT][CHOICECOUNT_U] = 

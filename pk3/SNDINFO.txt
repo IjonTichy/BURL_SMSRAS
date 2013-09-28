@@ -1312,3 +1312,6 @@ $volume BURL/swordwall 0.33
 
 BURL/pistol                     sounds/BURL/G17FIRE.ogg
 BURL/silencedpistol             sounds/BURL/dsspistol.ogg
+
+BURL/shotgunfire                sounds/BURL/shotfire.flac
+BURL/shotgunload                sounds/BURL/shotpump.ogg
