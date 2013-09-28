@@ -18,7 +18,11 @@ script SAMSARA_PDWTAK death
 
     SetActivatorToTarget(0);
 
-    if (PlayerNumber() == -1)
+    if (classNum == CLASS_BURL)
+    {
+        bombtimer = 0;
+    }
+    else if (PlayerNumber() == -1)
     {
         bombtimer = 35;
     }
@@ -100,7 +104,22 @@ script SAMSARA_PDWTAK death
     k = GetActorZ(yourTID);
 
     SetActorPosition(yourTID, x,y,z2, 0);
-    GiveActorInventory(yourTID, PDWTAKItems[pdwtak][classNum == CLASS_CHEX], 1);
+
+    switch (classNum)
+    {
+      case CLASS_CHEX:
+        GiveActorInventory(yourTID, PDWTAKItems[pdwtak][1], 1);
+        break;
+      
+      case CLASS_BURL:
+        GiveActorInventory(yourTID, PDWTAKItems[pdwtak][2], 1);
+        break;
+      
+      default:
+        GiveActorInventory(yourTID, PDWTAKItems[pdwtak][0], 1);
+        break;
+    }
+
     SetActorPosition(yourTID, i,j,k, 0);
 
 
@@ -108,7 +127,7 @@ script SAMSARA_PDWTAK death
     {
         Spawn(PeopleDieBlasts[classNum], x,y,z);
     }
-    else
+    else if (classNum != CLASS_BURL)
     {
         Spawn("DoomguyDiesWhenHeIsKilled", x,y,z);
     }

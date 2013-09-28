@@ -311,14 +311,14 @@ int PeopleDieBlasts[CLASSCOUNT] =
     "DukeDiesWhenHeIsKilled",
     "ManathorDiesWhenHeIsKilled",
     "RangerDiesWhenHeIsKilled",
-    "YOUCANNOTKILLBURL",
+    "YOUCANNOTKILLBURLTUMD",
 };
 
-int PDWTAKItems[PDWTAKCOUNT][2] = 
+int PDWTAKItems[PDWTAKCOUNT][3] = 
 {
-    {"InvPeopleDie",  "InvPeopleZorch"},
-    {"InvPeopleDie2", "InvPeopleZorch2"},
-    {"InvPeopleDie3", "InvPeopleZorch3"},
+    {"InvPeopleDie",  "InvPeopleZorch",  "InvBURLDEATH"},
+    {"InvPeopleDie2", "InvPeopleZorch2", "InvBURLDEATH2"},
+    {"InvPeopleDie3", "InvPeopleZorch3", "InvBURLDEATH3"},
 };
 
 #define ARMORCOUNT  5

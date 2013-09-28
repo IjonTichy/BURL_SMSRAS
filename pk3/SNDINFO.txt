@@ -1323,7 +1323,7 @@ BURL/shotgunload                sounds/BURL/shotpump.ogg
 BURL/ssgfire                    sounds/BURL/DSDSHTGN.flac
 BURL/ssgfire2                   sounds/BURL/DSDSHTGN.flac
 
-BURL/chaingunfire               sounds/BURL/DSCHNGN
+BURL/chaingunfire               sounds/BURL/DSCHNGN.flac
 $alias BURL/chaingunfire2       doomguy/pistol
 
 $limit BURL/chaingunfire     0
