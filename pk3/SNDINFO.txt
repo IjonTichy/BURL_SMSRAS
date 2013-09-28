@@ -1315,3 +1315,6 @@ BURL/silencedpistol             sounds/BURL/dsspistol.ogg
 
 BURL/shotgunfire                sounds/BURL/shotfire.flac
 BURL/shotgunload                sounds/BURL/shotpump.ogg
+
+BURL/ssgfire                    sounds/BURL/DSDSHTGN.flac
+BURL/ssgfire2                   sounds/BURL/DSDSHTGN.flac
