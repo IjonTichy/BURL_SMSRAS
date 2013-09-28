@@ -1297,3 +1297,18 @@ quake/impalsplod                sounds/ranger/impex.wav
 quake/impalefire                sounds/ranger/impfire.wav
 quake/impaload                  sounds/ranger/impload.wav
 quake/impalwall                 sounds/ranger/impwall.wav
+
+
+
+//////////////////////
+//  BURL SOUNDS
+//////////////////////
+
+
+BURL/swordswing                 sounds/BURL/DSHAMSWG.flac
+BURL/swordhit                   sounds/BURL/DSVBLHIT.flac
+BURL/swordwall                  sounds/BURL/DSVBLWAL.flac
+$volume BURL/swordwall 0.33
+
+BURL/pistol                     sounds/BURL/G17FIRE.ogg
+BURL/silencedpistol             sounds/BURL/dsspistol.ogg

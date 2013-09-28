@@ -1,0 +1,12 @@
+actor BURLEVERYONE: PowerDamage
+{
+    DamageFactor "Normal", 1.5
+    Powerup.Duration 0x7FFFFFFF
+}
+
+#include "decorate/BURL/player.dec"
+#include "decorate/BURL/puff.dec"
+
+
+#include "decorate/BURL/fist.dec"
+#include "decorate/BURL/pistol.dec"

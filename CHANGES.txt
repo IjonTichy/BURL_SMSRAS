@@ -1,0 +1,7 @@
+CHANGES FROM BURL TUMD:
+
+- You start with the pistol silencer.
+- The chainsaw comes with an assault rifle sweet jesus.
+- BURL TUMD takes 30% more damage, to balance his... kind of insane damage output.
+- Everyone else does 50% more damage, to match up to BURL TUMD. This, and the above, will probably not apply for deathmatch. Something else will.
+- The pistol has been nerfed. Infinite ammo makes the thing far too powerful for a pistol.

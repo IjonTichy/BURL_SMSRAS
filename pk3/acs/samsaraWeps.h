@@ -176,16 +176,16 @@ int ClassWeapons[CLASSCOUNT][SLOTCOUNT][CHOICECOUNT] =
     },
 
     {   // BURL TUMD
-        {" Fist ",                          "",             "",             "", ""},
-        {" Chainsaw ",                      "",             "",             "", ""},
-        {" Pistol ",                        "",             "",             "", ""},
-        {" Shotgun ",                       "Shell",        "",             "", ""},
-        {"Super Shotgun",                   "Shell",        "",             "", ""},
-        {" Chaingun ",                      "Clip",         "",             "", ""},
-        {"Rocket Launcher",                 "RocketAmmo",   "",             "", ""},
-        {"Plasma Rifle",                    "Cell",         "",             "", ""},
-        {"B.F.G. 9000",                     "Cell",         "",             "", ""},
-        {" Chainsaw ",                      "",             "",             "", ""},
+        {"Demonwhacker",                    "",             "",             "", ""},
+        {"Eager Beaver",                    "",             "",             "", ""},
+        {"Bullet Gun",                      "",             "",             "", ""},
+        {"Shiny Shell Spitter",             "Shell",        "",             "", ""},
+        {"Recoil Launcher",                 "Shell",        "",             "", ""},
+        {"Super Bullet Gun",                "Clip",         "",             "", ""},
+        {"RORKCT LANWCHR",                  "RocketAmmo",   "",             "", ""},
+        {"Toy Gun Barrel",                  "Cell",         "",             "", ""},
+        {"It shoots green",                 "Cell",         "",             "", ""},
+        {"Eager Beaver",                    "",             "",             "", ""},
     },
 };
 

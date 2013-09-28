@@ -980,7 +980,7 @@ int ClassPickupMessages[CLASSCOUNT][SLOTCOUNT][MSGCOUNT] =
     },
     {
         {
-            "yuo ar PNCHN MEN no",
+            "yuo ar SAMRI MEN no",
             "",
             "",
             "",

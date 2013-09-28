@@ -359,6 +359,10 @@ script SAMSARA_SPAWN (int respawning)
     
     while (!endloop && ServerEnterTimes[pln] == startTime)
     {
+        if (samsaraClassNum() != CLASS_BURL && !CheckInventory("BURLEVERYONE"))
+        {
+            GiveInventory("BURLEVERYONE", 1);
+        }
         
         if (array_wolfmove[pln]) { GiveInventory("WolfenMovement", 1); }
         else { TakeInventory("WolfenMovement", 0x7FFFFFFF); }

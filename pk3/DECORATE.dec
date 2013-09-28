@@ -17,6 +17,7 @@ const int SAMSARA_CLIENT_DECORATE = 212;
 #include "decorate/duke.dec"
 #include "decorate/marathon.dec"
 #include "decorate/ranger.dec"
+#include "decorate/BURL.dec"
 
 #include "decorate/slots.dec"
 #Include "decorate/pdwtak.dec"
