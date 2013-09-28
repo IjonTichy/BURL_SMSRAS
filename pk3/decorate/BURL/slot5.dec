@@ -72,7 +72,7 @@ actor "RORKCT LANWCHR": RocketLauncher
 actor BURLROCKET: Rocket
 {
     speed 40
-    Species "Rockit"
+    Species "Player"
     +THRUSPECIES
     +EXTREMEDEATH
     states

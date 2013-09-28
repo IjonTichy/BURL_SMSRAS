@@ -72,6 +72,10 @@ actor TossedChainsaw : SawRipper
     +SKYEXPLODE
     obituary "%o couldn't outrun %k's chainsaw."
     gravity 0.125
+
+    Species "Player"
+    +THRUSPECIES
+
     states
     {
       Spawn:

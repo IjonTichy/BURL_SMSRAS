@@ -64,6 +64,10 @@ actor PlasmaBrawl : PlasmaBall
 {
     damage (25)
     speed 40
+
+    Species "Player"
+    +THRUSPECIES
+
     States 
     {
       Spawn:
