@@ -3,4 +3,5 @@
 *.zip
 *.bkp
 nocommit/*
+compare/*
 *.err

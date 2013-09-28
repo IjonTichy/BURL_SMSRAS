@@ -65,15 +65,34 @@ actor BFGBowl : BFGBall replaces BFGBall
         
       Death:
         DBFE AB 8 Bright
-        DBFE C 8 Bright A_BFGSpray("",80,10)
+        DBFE C 8 Bright A_BFGSpray("EmptyBFGSpray",80,10)
         DBFE DEF 8 Bright
         Stop
     }
 }
 
+actor EmptyBFGSpray
+{
+    +NOINTERACTION
+    +CLIENTSIDEONLY
+
+    States
+    {
+      Spawn:
+        TNT1 A 0
+        stop
+    }
+}
+
 actor BFGBLOWl
 {
-    Radius 1 Height 1 +NOINTERACTION +EXTREMEDEATH DamageType "FECK9000" States
+    Radius 1
+    Height 1
+    +NOINTERACTION
+    +EXTREMEDEATH
+    DamageType "FECK9000"
+
+    States
     {
         
       Spawn:
@@ -86,7 +105,17 @@ actor BFGBLOWl
 
 actor BFGTrail1
 {
-    Speed 25 Radius 1 Height 1 Scale 0.6 PROJECTILE +NOINTERACTION +CLIENTSIDEONLY Renderstyle Add Alpha 0.66 States
+    Speed 25
+    Radius 1
+    Height 1
+    Scale 0.6
+    PROJECTILE
+    +NOINTERACTION
+    +CLIENTSIDEONLY
+    Renderstyle Add
+    Alpha 0.66
+
+    States
     {
         
       Spawn:
@@ -102,9 +131,12 @@ actor BFGTrail1
 
 actor BFGTrail2 : BFGTrail1
 {
-    Scale 0.5 Speed 5 Alpha 0.5 States
+    Scale 0.5
+    Speed 5
+    Alpha 0.5
+
+    States
     {
-        
       Spawn:
         DBFS AA 1 Bright A_FadeOut(0.02)
         Loop
