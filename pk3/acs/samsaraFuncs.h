@@ -512,6 +512,7 @@ function int HandleInstagib(int respawning)
     int i;
 
     if (cs <= 0) { return 0; }
+    if (classnum == -1) { return 0; }
 
     for (i = 0; i < SLOTCOUNT; i++)
     {
@@ -521,14 +522,7 @@ function int HandleInstagib(int respawning)
     }
 
     GiveInventory("InstagibModeOn",1);
-    if (CheckInventory("DoomguyClass") == 1) { GiveInventory(" Railgun ",1); }
-    if (CheckInventory("ChexClass") == 1) { GiveInventory("Gigazorcher 2100",1); }
-    if (CheckInventory("CorvusClass") == 1) { GiveInventory("Grim Ballista",1); }
-    if (CheckInventory("WolfenClass") == 1) { GiveInventory("Mauser Rifle",1); }
-    if (CheckInventory("HexenClass") == 1) { GiveInventory("Bloodscourge",1); }
-    if (CheckInventory("DukeClass") == 1) { GiveInventory("Golden Desert Eagle",1); }
-    if (CheckInventory("MarathonClass") == 1) { GiveInventory("SPNKR-25 Auto Cannon",1); }
-    if (CheckInventory("QuakeClass") == 1) { GiveInventory("Rocket Powered Impaler",1); }
+    GiveInventory(InstagibWeapons[classnum], 1);
     return 1;
 }
 

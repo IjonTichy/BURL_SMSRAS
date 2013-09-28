@@ -189,6 +189,19 @@ int ClassWeapons[CLASSCOUNT][SLOTCOUNT][CHOICECOUNT] =
     },
 };
 
+int InstagibWeapons[CLASSCOUNT] = 
+{
+    " Railgun ",
+    "Gigazorcher 2100",
+    "Grim Ballista",
+    "Mauser Rifle",
+    "Bloodscourge",
+    "Golden Desert Eagle",
+    "SPNKR-25 Auto Cannon",
+    "Rocket Powered Impaler",
+    "LOLIUNO",
+};
+
 int ClassScripts[CLASSCOUNT][SLOTCOUNT] = 
 {
     {0,0,0,0,0,0,0,0,0,0},
