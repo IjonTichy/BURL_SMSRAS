@@ -37,11 +37,24 @@ actor Demonwhacker: Weapon
         TNT1 A 4
         SRDG DE 1 
         SRDG F 1 A_PlaySound("BURL/swordswing")
-        SRDG GH 1 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
-        SRDG H 0 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
-        SRDG IJ 1 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
-        SRDG JJ 0 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG F 0 A_JumpIf((250 - health)/15 < 1, "WeakFire")
+
+        SRDG GH 1  A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG H 0   A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG IJ 1  A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG JJ 0  A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
         SRDG KLM 1 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        goto FireEnd
+
+      WeakFire:
+        SRDG GH 1  A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG H 0   A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG IJ 1  A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG JJ 0  A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG KLM 1 A_CustomPunch(1,1,0,"BladePuff1",96)
+        goto FireEnd
+
+      FireEnd:
         TNT1 AAAA 1 
         TNT1 AAAA 1 A_WeaponReady
         SRDG C 1
@@ -55,12 +68,25 @@ actor Demonwhacker: Weapon
         SRDG DE 1 
         SRDG F 1 A_PlaySound("BURL/swordswing")
         SRDG G 1
-        SRDG H 1 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG F 0 A_JumpIf((250 - health)/15 < 1, "WeakFire2")
+        SRDG H 1  A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
         SRDG HH 0 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
         SRDG IJ 1 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
         SRDG JJ 0 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
-        SRDG K 1 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG K 1  A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
         SRDG KK 0 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        goto Fire2End
+
+      WeakFire2:
+        SRDG H 1  A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG HH 0 A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG IJ 1 A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG JJ 0 A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG K 1  A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG KK 0 A_CustomPunch(1,1,0,"BladePuff1",96)
+        goto Fire2End
+    
+      Fire2End:
         SRDG LM 1
         TNT1 AAA 1 
         TNT1 AAA 1 A_WeaponReady
@@ -75,12 +101,25 @@ actor Demonwhacker: Weapon
         SRDG DE 1 
         SRDG F 1 A_PlaySound("BURL/swordswing")
         SRDG G 1
-        SRDG H 1 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG F 0 A_JumpIf((250 - health)/15 < 1, "WeakFire3")
+
+        SRDG H 1  A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
         SRDG HH 0 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
         SRDG IJ 1 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
         SRDG JJ 0 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
-        SRDG K 1 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG K 1  A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
         SRDG KK 0 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        goto Fire3End
+
+      WeakFire3:
+        SRDG H 1  A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG HH 0 A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG IJ 1 A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG JJ 0 A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG K 1  A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG KK 0 A_CustomPunch(1,1,0,"BladePuff1",96)
+        goto Fire3End
+
         SRDG LM 1
         TNT1 AA 1 
         TNT1 AA 1 A_WeaponReady
@@ -95,10 +134,22 @@ actor Demonwhacker: Weapon
         SRDG DE 1 
         SRDG F 1 A_PlaySound("BURL/swordswing")
         SRDG G 1
-        SRDG H 1 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
-        SRDG HHH 0 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
-        SRDG IJ 1 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG F 0 A_JumpIf((250 - health)/15 < 1, "WeakFire4")
+
+        SRDG H 1    A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG HHH 0  A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG IJ 1   A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
         SRDG JJJJ 0 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        goto Fire4End
+
+      WeakFire4:
+        SRDG H 1    A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG HHH 0  A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG IJ 1   A_CustomPunch(1,1,0,"BladePuff1",96)
+        SRDG JJJJ 0 A_CustomPunch(1,1,0,"BladePuff1",96)
+        goto Fire4End
+
+      Fire4End:
         SRDG KLM 1
         TNT1 A 1 
         TNT1 A 1 A_WeaponReady
@@ -111,10 +162,22 @@ actor Demonwhacker: Weapon
         SRDG C 1
         SRDG DE 1 
         SRDG F 1 A_PlaySound("BURL/swordswing")
-        SRDG H 1 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
-        SRDG HHH 0 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
-        SRDG IJ 1 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG F 0 A_JumpIf((250 - health)/15 < 1, "WeakFire5")
+
+        SRDG H 1    A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG HHH 0  A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG IJ 1   A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
         SRDG JJJJ 0 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        goto Fire5End
+        
+      WeakFire5:
+        SRDG H 1    A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG HHH 0  A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG IJ 1   A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        SRDG JJJJ 0 A_CustomPunch(((250 - health)/15),1,0,"BladePuff1",96)
+        goto Fire5End
+    
+      Fire5End:
         SRDG KLM 1
         TNT1 A 1 
         TNT1 AA 1 A_WeaponReady
