@@ -1128,7 +1128,7 @@ StatusBar normal, forcescaled
                 InInventory MagnumBulletRight, 7 { DrawImage "MARPISAM", 35, 185; }
                 InInventory MagnumBulletRight, 8 { DrawImage "MARPISAM", 40, 185; }
             }
-        }                       //, 0, white, 0, white, 20;}}
+        }
 
         IsSelected "KKV-7 SMG Flechette"
         {
@@ -1864,6 +1864,139 @@ IsSelected not "Spnkr-25 Auto Cannon"
         drawselectedinventory alwaysshowcounter, WOLFHUDF, 290, 22, 293, 30, black;
     }
 
+    playerclass BURL_TUMD
+    {
+        drawimage "DOOMBAR", 0, 168;
+        //drawimage "DOOMBART", 0, 0;
+        drawnumber 3, DOOMHUDF, gold, ammo1, 44, 171, 0, untranslated, 0, untranslated, 20;
+        drawnumber 3, DOOMHUDF, gold, health, 94, 171, white, 25, untranslated, 50;
+        drawnumber 3, DOOMHUDF, gold, armor, 219, 171, 0, untranslated, 0, untranslated, 50;
+
+        //Doom keys
+        InInventory BlueCard, 1 { drawimage "STKEYS0", 226, 175; }
+        InInventory YellowCard, 1 { drawimage "STKEYS1", 238, 175; }
+        InInventory RedCard, 1 { drawimage "STKEYS2", 250, 175; }
+        InInventory BlueSkull, 1 { drawimage "STKEYS3", 226, 186; }
+        InInventory YellowSkull, 1 { drawimage "STKEYS4", 238, 186; }
+        InInventory RedSkull, 1 { drawimage "STKEYS5", 250, 186; }
+        //Chex keys
+        InInventory ChexBlueCard, 1 { drawimage "STKEYS0", 222, 175; }
+        InInventory ChexYellowCard, 1 { drawimage "STKEYS1", 235, 175; }
+        InInventory ChexRedCard, 1 { drawimage "STKEYS2", 248, 175; }
+        InInventory BlueFlemKey, 1 { drawimage "STKEYS3", 222, 186; }
+        InInventory YellowFlemKey, 1 { drawimage "STKEYS4", 235, 186; }
+        InInventory RedFlemKey, 1 { drawimage "STKEYS5", 248, 186; }
+        //Heretic keys
+        InInventory KeyYellow, 1 { drawimage "YKEYICON", 224, 181; }
+        InInventory KeyGreen, 1 { drawimage "GKEYICON", 238, 181; }
+        InInventory KeyBlue, 1 { drawimage "BKEYICON", 251, 181; }
+        //HeXen keys
+        InInventory KeySteel, 1 { drawimage "HEXKEY1", 223, 171; }
+        InInventory KeyCave, 1 { drawimage "HEXKEY2", 223, 181; }
+        InInventory KeyAxe, 1 { drawimage "HEXKEY3", 223, 191; }
+        InInventory KeyFire, 1 { drawimage "HEXKEY4", 233, 171; }
+        InInventory KeyEmerald, 1 { drawimage "HEXKEY5", 233, 181; }
+        InInventory KeyDungeon, 1 { drawimage "HEXKEY6", 233, 191; }
+        InInventory KeySilver, 1 { drawimage "HEXKEY7", 243, 171; }
+        InInventory KeyRusted, 1 { drawimage "HEXKEY8", 243, 181; }
+        InInventory KeyHorn, 1 { drawimage "HEXKEY9", 243, 191; }
+        InInventory KeySwamp, 1 { drawimage "HEXKEYA", 253, 171; }
+        InInventory KeyCastle, 1 { drawimage "HEXKEYB", 253, 181; }
+        //Strife keys
+        InInventory BaseKey, 1 { drawimage "STRIKEY1", 223, 171; }
+        InInventory GovsKey, 1 { drawimage "STRIKEY2", 229, 171; }
+        InInventory PassCard, 1 { drawimage "STRIKEY3", 235, 171; }
+        InInventory IDBadge, 1 { drawimage "STRIKEY4", 242, 171; }
+        InInventory PrisonKey, 1 { drawimage "STRIKEY5", 248, 171; }
+        InInventory SeveredHand, 1 { drawimage "STRIKEY6", 255, 171; }
+        InInventory Power1Key, 1 { drawimage "STRIKEY7", 223, 178; }
+        InInventory Power2Key, 1 { drawimage "STRIKEY8", 229, 178; }
+        InInventory Power3Key, 1 { drawimage "STRIKEY9", 235, 178; }
+        InInventory GoldKey, 1 { drawimage "STRIKEYA", 242, 178; }
+        InInventory IDCard, 1 { drawimage "STRIKEYB", 248, 178; }
+        InInventory SilverKey, 1 { drawimage "STRIKEYC", 255, 178; }
+        InInventory OracleKey, 1 { drawimage "STRIKEYD", 223, 185; }
+        InInventory MilitaryID, 1 { drawimage "STRIKEYE", 229, 185; }
+        InInventory OrderKey, 1 { drawimage "STRIKEYF", 235, 185; }
+        InInventory BrassKey, 1 { drawimage "STRIKEYG", 242, 185; }
+        InInventory RedCrystalKey, 1 { drawimage "STRIKEYH", 248, 185; }
+        InInventory BlueCrystalKey, 1 { drawimage "STRIKEYI", 255, 185; }
+        InInventory ChapelKey, 1 { drawimage "STRIKEYJ", 223, 192; }
+        InInventory CatacombKey, 1 { drawimage "STRIKEYK", 229, 192; }
+        InInventory CoreKey, 1 { drawimage "STRIKEYL", 235, 192; }
+        InInventory MaulerKey, 1 { drawimage "STRIKEYM", 242, 192; }
+        InInventory FactoryKey, 1 { drawimage "STRIKEYN", 248, 192; }
+        InInventory MineKey, 1 { drawimage "STRIKEYO", 255, 192; }
+
+        drawnumber 3, INDEXFON, gold, ammo Clip, 289, 173;
+         drawnumber 3, INDEXFON, gold, ammo Shell, 289, 179;
+         drawnumber 3, INDEXFON, gold, ammo RocketAmmo, 289, 185;
+         drawnumber 3, INDEXFON, gold, ammo Cell, 289, 191;
+
+         drawnumber 3, INDEXFON, gold, ammocapacity Clip, 315, 173;
+         drawnumber 3, INDEXFON, gold, ammocapacity Shell, 315, 179;
+         drawnumber 3, INDEXFON, gold, ammocapacity RocketAmmo, 315, 185;
+         drawnumber 3, INDEXFON, gold, ammocapacity Cell, 315, 191;
+		 InInventory not ChickenModeOn, 1 {
+        gamemode deathmatch, teamplay, teamgame, OneFlagCTF, CTF, Skulltag, TeamLMS, TeamPossession { drawnumber 3, DOOMHUDF, untranslated, frags, 142, 171; }
+        gamemode cooperative, singleplayer
+        {
+            drawnumber 3, DOOMHUDF, untranslated, KillCountAmount, 142, 171;
+            InInventory KillCountNotch, 1 { drawimage "DOMNOTCH", 99, 167; }
+            InInventory KillCountNotch, 2 { drawimage "DOMNOTCH", 104, 167; }
+            InInventory KillCountNotch, 3 { drawimage "DOMNOTCH", 109, 167; }
+            InInventory KillCountNotch, 4 { drawimage "DOMNOTCH", 114, 167; }
+            InInventory KillCountNotch, 5 { drawimage "DOMNOTCH", 119, 167; }
+            InInventory KillCountNotch, 6 { drawimage "DOMNOTCH", 124, 167; }
+            InInventory KillCountNotch, 7 { drawimage "DOMNOTCH", 129, 167; }
+            InInventory KillCountNotch, 8 { drawimage "DOMNOTCH", 134, 167; }
+            InInventory KillCountNotch, 9 { drawimage "DOMNOTCH", 139, 167; }
+        }}
+		InInventory ChickenModeOn, 1 { drawnumber 3, DOOMHUDF, untranslated, ChickenKillCount, 142, 171; }
+        DrawImage RuneIcon, 20, 40, Center;
+        drawselectedinventory alwaysshowcounter, DOOMHUDF, 290, 22, 293, 30, untranslated;
+        GameMode Teamplay, TeamGame, OneFlagCTF, CTF, Skulltag, TeamLMS, TeamPossession { drawimage translatable "CLRDOOM", 145, 169; }
+        InInventory not PowerFakeInvulnerable, 1 {drawmugshot "STF", 5, 143, 168;}
+        InInventory PowerFakeInvulnerable, 1 {drawimage "DGYGOD0", 143, 168;}
+        InInventory ExpandedHud, 1
+        {
+            drawimage "DOOMBART", 0, 0;
+            InInventory GotWeapon0, 1 { drawimage "WEPSELN1", 54, 0; }
+            InInventory GotWeapon0, 1 { drawimage "WPDOOM1N", 49, 11; }
+            IsSelected " Chainsaw " { drawimage "WEPSELY1", 54, 0; }
+            IsSelected " Chainsaw " { drawimage "WPDOOM1Y", 49, 11; }
+
+            InInventory GotWeapon2, 1 { drawimage "WEPSELN2", 87, 0; }
+            InInventory GotWeapon2, 1 { drawimage "WPDOOM2N", 82, 11; }
+            IsSelected " Shotgun " { drawimage "WEPSELY2", 87, 0; }
+            IsSelected " Shotgun " { drawimage "WPDOOM2Y", 82, 11; }
+
+            InInventory GotWeapon3, 1 { drawimage "WEPSELN3", 120, 0; }
+            InInventory GotWeapon3, 1 { drawimage "WPDOOM3N", 115, 11; }
+            IsSelected "Super Shotgun" { drawimage "WEPSELY3", 120, 0; }
+            IsSelected "Super Shotgun" { drawimage "WPDOOM3Y", 115, 11; }
+
+            InInventory GotWeapon4, 1 { drawimage "WEPSELN4", 154, 0; }
+            InInventory GotWeapon4, 1 { drawimage "WPDOOM4N", 148, 11; }
+            IsSelected " Chaingun " { drawimage "WEPSELY4", 154, 0; }
+            IsSelected " Chaingun " { drawimage "WPDOOM4Y", 148, 11; }
+
+            InInventory GotWeapon5, 1 { drawimage "WEPSELN5", 186, 0; }
+            InInventory GotWeapon5, 1 { drawimage "WPDOOM5N", 181, 11; }
+            IsSelected "Rocket Launcher" { drawimage "WEPSELY5", 186, 0; }
+            IsSelected "Rocket Launcher" { drawimage "WPDOOM5Y", 181, 11; }
+
+            InInventory GotWeapon6, 1 { drawimage "WEPSELN6", 219, 0; }
+            InInventory GotWeapon6, 1 { drawimage "WPDOOM6N", 214, 11; }
+            IsSelected "Plasma Rifle" { drawimage "WEPSELY6", 219, 0; }
+            IsSelected "Plasma Rifle" { drawimage "WPDOOM6Y", 214, 11; }
+
+            InInventory GotWeapon7, 1 { drawimage "WEPSELN7", 251, 0; }
+            InInventory GotWeapon7, 1 { drawimage "WPDOOM7N", 247, 11; }
+            IsSelected "B.F.G. 9000" { drawimage "WEPSELY7", 251, 0; }
+            IsSelected "B.F.G. 9000" { drawimage "WPDOOM7Y", 247, 11; }
+        }
+    }
 }
 
 statusbar inventory { drawinventorybar Doom, 7, INDEXFON, 50, 170, 76, 192, white; }
@@ -3036,5 +3169,96 @@ IsSelected not "Spnkr-25 Auto Cannon"
             InInventory PowerQuadDamage, 1 { drawimage "RNGNVSD0", 143, 168; }
         }
 
+    }
+
+    playerclass BURL_TUMD
+    {
+        drawimage "DOOMBAR", 0, 168;
+        drawnumber 3, DOOMHUDF, gold, ammo1, 44, 171, 0, untranslated, 0, untranslated, 20;
+        drawnumber 3, DOOMHUDF, gold, health, 94, 171, white, 25, untranslated, 50;
+        drawnumber 3, DOOMHUDF, gold, armor, 219, 171, 0, untranslated, 0, untranslated, 50;
+
+        //Doom keys
+        InInventory BlueCard, 1 { drawimage "STKEYS0", 226, 175; }
+        InInventory YellowCard, 1 { drawimage "STKEYS1", 238, 175; }
+        InInventory RedCard, 1 { drawimage "STKEYS2", 250, 175; }
+        InInventory BlueSkull, 1 { drawimage "STKEYS3", 226, 186; }
+        InInventory YellowSkull, 1 { drawimage "STKEYS4", 238, 186; }
+        InInventory RedSkull, 1 { drawimage "STKEYS5", 250, 186; }
+        //Chex keys
+        InInventory ChexBlueCard, 1 { drawimage "STKEYS0", 222, 175; }
+        InInventory ChexYellowCard, 1 { drawimage "STKEYS1", 235, 175; }
+        InInventory ChexRedCard, 1 { drawimage "STKEYS2", 248, 175; }
+        InInventory BlueFlemKey, 1 { drawimage "STKEYS3", 222, 186; }
+        InInventory YellowFlemKey, 1 { drawimage "STKEYS4", 235, 186; }
+        InInventory RedFlemKey, 1 { drawimage "STKEYS5", 248, 186; }
+        //Heretic keys
+        InInventory KeyYellow, 1 { drawimage "YKEYICON", 224, 181; }
+        InInventory KeyGreen, 1 { drawimage "GKEYICON", 238, 181; }
+        InInventory KeyBlue, 1 { drawimage "BKEYICON", 251, 181; }
+        //HeXen keys
+        InInventory KeySteel, 1 { drawimage "HEXKEY1", 223, 171; }
+        InInventory KeyCave, 1 { drawimage "HEXKEY2", 223, 181; }
+        InInventory KeyAxe, 1 { drawimage "HEXKEY3", 223, 191; }
+        InInventory KeyFire, 1 { drawimage "HEXKEY4", 233, 171; }
+        InInventory KeyEmerald, 1 { drawimage "HEXKEY5", 233, 181; }
+        InInventory KeyDungeon, 1 { drawimage "HEXKEY6", 233, 191; }
+        InInventory KeySilver, 1 { drawimage "HEXKEY7", 243, 171; }
+        InInventory KeyRusted, 1 { drawimage "HEXKEY8", 243, 181; }
+        InInventory KeyHorn, 1 { drawimage "HEXKEY9", 243, 191; }
+        InInventory KeySwamp, 1 { drawimage "HEXKEYA", 253, 171; }
+        InInventory KeyCastle, 1 { drawimage "HEXKEYB", 253, 181; }
+        //Strife keys
+        InInventory BaseKey, 1 { drawimage "STRIKEY1", 223, 171; }
+        InInventory GovsKey, 1 { drawimage "STRIKEY2", 229, 171; }
+        InInventory PassCard, 1 { drawimage "STRIKEY3", 235, 171; }
+        InInventory IDBadge, 1 { drawimage "STRIKEY4", 242, 171; }
+        InInventory PrisonKey, 1 { drawimage "STRIKEY5", 248, 171; }
+        InInventory SeveredHand, 1 { drawimage "STRIKEY6", 255, 171; }
+        InInventory Power1Key, 1 { drawimage "STRIKEY7", 223, 178; }
+        InInventory Power2Key, 1 { drawimage "STRIKEY8", 229, 178; }
+        InInventory Power3Key, 1 { drawimage "STRIKEY9", 235, 178; }
+        InInventory GoldKey, 1 { drawimage "STRIKEYA", 242, 178; }
+        InInventory IDCard, 1 { drawimage "STRIKEYB", 248, 178; }
+        InInventory SilverKey, 1 { drawimage "STRIKEYC", 255, 178; }
+        InInventory OracleKey, 1 { drawimage "STRIKEYD", 223, 185; }
+        InInventory MilitaryID, 1 { drawimage "STRIKEYE", 229, 185; }
+        InInventory OrderKey, 1 { drawimage "STRIKEYF", 235, 185; }
+        InInventory BrassKey, 1 { drawimage "STRIKEYG", 242, 185; }
+        InInventory RedCrystalKey, 1 { drawimage "STRIKEYH", 248, 185; }
+        InInventory BlueCrystalKey, 1 { drawimage "STRIKEYI", 255, 185; }
+        InInventory ChapelKey, 1 { drawimage "STRIKEYJ", 223, 192; }
+        InInventory CatacombKey, 1 { drawimage "STRIKEYK", 229, 192; }
+        InInventory CoreKey, 1 { drawimage "STRIKEYL", 235, 192; }
+        InInventory MaulerKey, 1 { drawimage "STRIKEYM", 242, 192; }
+        InInventory FactoryKey, 1 { drawimage "STRIKEYN", 248, 192; }
+        InInventory MineKey, 1 { drawimage "STRIKEYO", 255, 192; }
+
+        drawnumber 3, INDEXFON, gold, ammo Clip, 289, 173;
+         drawnumber 3, INDEXFON, gold, ammo Shell, 289, 179;
+         drawnumber 3, INDEXFON, gold, ammo RocketAmmo, 289, 185;
+         drawnumber 3, INDEXFON, gold, ammo Cell, 289, 191;
+
+         drawnumber 3, INDEXFON, gold, ammocapacity Clip, 315, 173;
+         drawnumber 3, INDEXFON, gold, ammocapacity Shell, 315, 179;
+         drawnumber 3, INDEXFON, gold, ammocapacity RocketAmmo, 315, 185;
+         drawnumber 3, INDEXFON, gold, ammocapacity Cell, 315, 191;
+        gamemode deathmatch, teamplay, teamgame, OneFlagCTF, CTF, Skulltag, TeamLMS, TeamPossession { drawnumber 3, DOOMHUDF, untranslated, frags, 142, 171; }
+        gamemode cooperative, singleplayer
+        {
+            drawnumber 3, DOOMHUDF, untranslated, KillCountAmount, 142, 171;
+            InInventory KillCountNotch, 1 { drawimage "DOMNOTCH", 99, 167; }
+            InInventory KillCountNotch, 2 { drawimage "DOMNOTCH", 104, 167; }
+            InInventory KillCountNotch, 3 { drawimage "DOMNOTCH", 109, 167; }
+            InInventory KillCountNotch, 4 { drawimage "DOMNOTCH", 114, 167; }
+            InInventory KillCountNotch, 5 { drawimage "DOMNOTCH", 119, 167; }
+            InInventory KillCountNotch, 6 { drawimage "DOMNOTCH", 124, 167; }
+            InInventory KillCountNotch, 7 { drawimage "DOMNOTCH", 129, 167; }
+            InInventory KillCountNotch, 8 { drawimage "DOMNOTCH", 134, 167; }
+            InInventory KillCountNotch, 9 { drawimage "DOMNOTCH", 139, 167; }
+        }
+        GameMode Teamplay, TeamGame, OneFlagCTF, CTF, Skulltag, TeamLMS, TeamPossession { drawimage translatable "CLRDOOM", 145, 169; }
+        InInventory not PowerFakeInvulnerable, 1 {drawmugshot "STF", 5, 143, 168;}
+        InInventory PowerFakeInvulnerable, 1 {drawimage "DGYGOD0", 143, 168;}
     }
 }

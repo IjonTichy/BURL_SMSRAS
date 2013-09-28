@@ -2,7 +2,7 @@ actor IAMBURLTUMD: Boolean {}
 
 actor BURLSAM: PlayerPawn
 {
-    Player.DisplayName "BURL TUMD"
+    Player.DisplayName "BURL_TUMD"
     Player.CrouchSprite "DGYC"
     Player.Face "DGY"
     BloodColor "Red"

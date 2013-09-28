@@ -1324,6 +1324,9 @@ BURL/shotgunload                sounds/BURL/shotpump.ogg
 
 BURL/ssgfire                    sounds/BURL/DSDSHTGN.flac
 BURL/ssgfire2                   sounds/BURL/DSDSHTGN.flac
+BURL/ssgopen                    sounds/BURL/dshotopen.flac
+BURL/ssgload                    sounds/BURL/dshotload.flac
+BURL/ssgclose                   sounds/BURL/dshotclose.flac
 
 BURL/chaingunfire               sounds/BURL/DSCHNGN.flac
 $alias BURL/chaingunfire2       doomguy/pistol
