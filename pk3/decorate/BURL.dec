@@ -6,6 +6,7 @@ actor BURLEVERYONE: PowerDamage
 
 #include "decorate/BURL/player.dec"
 #include "decorate/BURL/puff.dec"
+#include "decorate/BURL/blood.dec"
 
 
 #include "decorate/BURL/fist.dec"
