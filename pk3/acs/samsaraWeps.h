@@ -177,7 +177,7 @@ int ClassWeapons[CLASSCOUNT][SLOTCOUNT][CHOICECOUNT] =
 
     {   // BURL TUMD
         {"Demonwhacker",                    "",             "",             "", ""},
-        {"Eager Beaver",                    "",             "",             "", ""},
+        {"Eager Beaver",                    "Clip",         "",             "", ""},
         {"Bullet Gun",                      "",             "",             "", ""},
         {"Shiny Shell Spitter",             "Shell",        "",             "", ""},
         {"Recoil Launcher",                 "Shell",        "",             "", ""},
@@ -191,13 +191,13 @@ int ClassWeapons[CLASSCOUNT][SLOTCOUNT][CHOICECOUNT] =
 
 int ClassScripts[CLASSCOUNT][SLOTCOUNT] = 
 {
-    {0,0,                   0,  0,0,0,0,0,0,0},
-    {0,0,                   0,  0,0,0,0,0,0,0},
-    {0,0,                   0,  0,0,0,0,0,0,0},
-    {0,0,                   0,  0,0,0,0,0,0,0},
-    {0,0,                   0,  0,0,0,0,0,0,0},
-    {0,0,                   0,  0,0,0,0,0,0,0},
-    {0,SAMSARA_MARATHON,    0,  SAMSARA_MARATHON,SAMSARA_MARATHON,SAMSARA_MARATHON,SAMSARA_MARATHON,SAMSARA_MARATHON,SAMSARA_MARATHON,0},
-    {0,0,                   0,  0,0,0,0,0,SAMSARA_QUAKE,0},
-    {0,0,                   0,  0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,0,0,0,0,0,0,0,0,0},
+    {0,SAMSARA_MARATHON,0,SAMSARA_MARATHON,SAMSARA_MARATHON,SAMSARA_MARATHON,SAMSARA_MARATHON,SAMSARA_MARATHON,SAMSARA_MARATHON,0},
+    {0,0,0,0,0,0,0,0,SAMSARA_QUAKE,0},
+    {0,SAMSARA_BURL,0,0,0,0,0,0,0,0},
 };

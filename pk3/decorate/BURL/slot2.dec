@@ -15,6 +15,10 @@ actor "Shiny Shell Spitter": Shotgun
         BSHG A 1 A_Lower
         loop
 
+      Ready:
+        BSHG A 1 A_WeaponReady
+        loop
+
       Fire:
         BSHG A 0 A_PlaySound("BURL/shotgunfire",5)
         BSHG A 0 Radius_Quake(random(2,4),random(4,5),0,1,0)

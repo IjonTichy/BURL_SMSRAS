@@ -1308,13 +1308,20 @@ quake/impalwall                 sounds/ranger/impwall.wav
 BURL/swordswing                 sounds/BURL/DSHAMSWG.flac
 BURL/swordhit                   sounds/BURL/DSVBLHIT.flac
 BURL/swordwall                  sounds/BURL/DSVBLWAL.flac
+$limit BURL/swordhit 0
+$volume BURL/swordhit 0.75
 $volume BURL/swordwall 0.33
 
 BURL/pistol                     sounds/BURL/G17FIRE.ogg
 BURL/silencedpistol             sounds/BURL/dsspistol.ogg
+
+BURL/assaultriflefire           sounds/BURL/AK47FIRE.ogg
 
 BURL/shotgunfire                sounds/BURL/shotfire.flac
 BURL/shotgunload                sounds/BURL/shotpump.ogg
 
 BURL/ssgfire                    sounds/BURL/DSDSHTGN.flac
 BURL/ssgfire2                   sounds/BURL/DSDSHTGN.flac
+
+BURL/chaingunfire               sounds/BURL/DSCHNGN
+$alias BURL/chaingunfire2       doomguy/pistol

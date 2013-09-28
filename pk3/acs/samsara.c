@@ -41,6 +41,7 @@ global int 0:SamsaraGlobal[];
 #include "script_pickup.h"
 #include "script_marathon.h"
 #include "script_quake.h"
+#include "script_burl.h"
 #include "script_tipbox.h"
 #include "script_strife.h"
 #include "script_scheduled.h"

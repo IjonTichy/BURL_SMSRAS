@@ -93,6 +93,8 @@ addslotdefault 1 ".44 Magnum Mega Class A1"
 addslotdefault 1 "Single Shotgun"
 addslotdefault 1 "Bullet Gun"
 
+addslotdefault 1 "Accurate Bullet Gun"
+
 addslotdefault 2 " Shotgun "
 addslotdefault 2 " Firemace "
 addslotdefault 2 "Frost Shards"
