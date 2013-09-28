@@ -67,10 +67,10 @@ actor PlasmaBrawl : PlasmaBall
     States 
     {
       Spawn:
-        DPLM A 1 bright A_SpawnItem("PlasmaTrailA")
-        DPLM C 1 bright A_SpawnItem("PlasmaTrailC")
-        DPLM B 1 bright A_SpawnItem("PlasmaTrailB")
-        DPLM D 1 Bright A_SpawnItem("PlasmaTrailD")
+        BRPL A 1 bright A_SpawnItem("PlasmaTrailA")
+        BRPL C 1 bright A_SpawnItem("PlasmaTrailC")
+        BRPL B 1 bright A_SpawnItem("PlasmaTrailB")
+        BRPL D 1 Bright A_SpawnItem("PlasmaTrailD")
         loop
 
       Death:

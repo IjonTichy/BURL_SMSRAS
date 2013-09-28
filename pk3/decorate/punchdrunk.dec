@@ -123,6 +123,16 @@ actor RangerPunchDrunk: Trigger
     }
 }
 
+actor BURLISPUNCHING: Trigger
+{
+    States
+    {
+      Pickup:
+        TNT1 A 0 
+        stop
+    }
+}
+
 
 
 actor DoomguyPunchUnique: Trigger
@@ -207,4 +217,15 @@ actor RangerPunchUnique: Trigger
         stop
     }
 }
+
+actor BURLGOODPUNCHING: Trigger
+{
+    States
+    {
+      Pickup:
+        TNT1 A 0 A_GiveInventory("Sharper Demonwhacker")
+        stop
+    }
+}
+
 

@@ -1,0 +1,49 @@
+actor "Sharper Demonwhacker": Weapon
+{
+    Inventory.PickupMessage "You got the Vorpal Blade!"
+    tag "Vorpal Blade"
+    
+    +NOALERT
+    +EXTREMEDEATH
+    +CHEATNOTWEAPON
+    
+    States
+    {
+      Spawn:
+        WVBL A -1 Bright
+        Loop
+
+      Ready:
+        VBLG A 1 A_WeaponReady
+        Loop
+
+      Deselect:
+        VBLG A 0 A_Lower
+        VBLG A 1 A_Lower
+        Loop
+
+      Select:
+        VBLG A 0 A_Raise
+        VBLG A 1 A_Raise
+        Loop
+
+      Fire:
+        VBLG B 2 Bright 
+        VBLG C 2 Bright     A_PlayWeaponSound("BURL/swordswing")
+        VBLG DD 1 bright    A_CustomPunch((health/10) + 15, 1, 0, "BladePuff1", 96)
+        VBLG D 0            A_CustomPunch((health/10) + 15, 1, 0, "BladePuff1", 96)
+        VBLG EE 1 bright    A_CustomPunch((health/10) + 15, 1, 0, "BladePuff1", 96)
+        VBLG E 0            A_CustomPunch((health/10) + 15, 1, 0, "BladePuff1", 96)
+        VBLG FF 1 bright    A_CustomPunch((health/10) + 15, 1, 0, "BladePuff1", 96)
+        VBLG GG 1 Bright    A_CustomPunch((health/10) + 15, 1, 0, "BladePuff1", 96)
+        NULL A 3 Bright  
+        VBLG A 0 A_ReFire
+        VBLG A 1 Offset (0, 60)
+        VBLG A 0 Offset (0, 55)
+        VBLG A 1 Offset (0, 50)
+        VBLG A 0 Offset (0, 45)
+        VBLG A 1 Offset (0, 40)
+        Goto Ready
+    }
+}
+

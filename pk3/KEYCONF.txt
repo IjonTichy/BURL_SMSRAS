@@ -82,6 +82,7 @@ addslotdefault 1 "Talon Ceramic Combat Blade"
 addslotdefault 1 "Tech.50 Pacifier"
 addslotdefault 1 "Gauntlet"
 addslotdefault 1 "Mjolnir"
+addslotdefault 1 "Sharper Demonwhacker"
 
 addslotdefault 1 " Pistol "
 addslotdefault 1 "Elven Wand"

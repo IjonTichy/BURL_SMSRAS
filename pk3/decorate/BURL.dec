@@ -20,3 +20,4 @@ actor BURLEVERYONE: PowerDamage
 #include "decorate/BURL/slot7.dec"
 
 #include "decorate/BURL/unique.dec"
+#include "decorate/BURL/vorpalblade.dec"
