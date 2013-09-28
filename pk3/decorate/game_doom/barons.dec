@@ -3,6 +3,8 @@ actor BaronOfHell2 : BaronOfHell replaces BaronOfHell
     DamageFactor "CorvusCrossbow", 1.15
     DamageFactor "DragonClaw", 1.6
     PainChance "MightyBoot", 255
+	damagefactor "Explosion", 0.5
+	bloodtype "NobleBlood"
     BloodColor darkolivegreen
     +DONTRIP
     +BOSSDEATH
@@ -18,14 +20,13 @@ actor BaronOfHell2 : BaronOfHell replaces BaronOfHell
       Missile:
         TNT1 A 0 A_ChangeFlag("NOPAIN",0)
         BOSS EF 8 A_FaceTarget
-        BOSS G 8 A_CustomComboAttack("BaronBall3", 32, 10 * random(1, 8), "baron/melee")//A_CustomMissile("BaronBall3")
+        BOSS GGG 2 A_CustomComboAttack("BaronBall3", 32, 10 * random(1, 8), "baron/melee")//A_CustomMissile("BaronBall3")
+        BOSS G 2
         goto See
 
       Death.DukeExplosive:
       Death.DukeSpectral:
-
       Death.DukeDamage:
-
       Death.DukePistol:
         TNT1 A 0 A_Jump(218,"Death")
         TNT1 A 0 A_GiveToTarget("DukeKillTaunt",1)
@@ -39,7 +40,31 @@ actor BaronOfHell2 : BaronOfHell replaces BaronOfHell
 
       Death:
         TNT1 A 0 A_GiveToTarget("KillCount",1)
-        goto "Super::Death"
+			TNT1 A 0 A_Jump(112,"Death2","Death2","Death3")
+			BOSS I 8
+			BOSS J 0 A_Scream
+			BOSS JJJJJJJJ 1 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(-6,26),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,200)
+			BOSS KKKKKKKK 1 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(-6,20),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,140)
+			Goto Super::Death+3
+		Death2:
+			BOS3 P 6 
+			BOS3 Q 0 A_Scream 
+			BOS3 QQQQQQ 1 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(-6,26),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,90)
+			BOS3 R 6 A_Fall 
+			BOS3 STU 6 
+			TNT1 AAAAAAAA 0 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(-6,12),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,90)
+			BOS3 V -1 
+			Stop
+		Death3:
+			BOS4 P 5 A_Recoil(4)
+			BOS4 Q 5 A_Scream
+			TNT1 AAA 0 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(6,20),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,90)
+			BOS4 R 5 A_Fall
+			BOS4 S 6
+			TNT1 AAAAAAA 0 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(-6,12),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,90)
+			BOS4 TU 8
+			BOS4 V -1
+			Stop
 
       Pain.MightyBoot:
         TNT1 A 0 A_ChangeFlag("NOPAIN",1)
@@ -128,6 +153,15 @@ actor BaronOfHell2 : BaronOfHell replaces BaronOfHell
         //BOSS H 1 A_IceGuyDie
         TNT1 A -1 A_BossDeath
         stop
+
+		XDeath:
+			BOXS P 5
+			TNT1 AAAAAAAAAAAAA 0 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(-6,12),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,90)
+			BOXS Q 5 A_XScream
+			BOXS R 5 A_NoBlocking
+			BOXS STUVW 5
+			BOXS X -1
+			Stop
     }
 }
 
@@ -160,12 +194,16 @@ actor BaronBall3 : BaronBall
 {
     DamageType "DoomHellNoble"
     -THRUGHOST
+	damage (20)
+	speed 20
 }
 
 actor BaronBall2 : BaronBall replaces BaronBall
 {
     DamageType "DoomHellNoble"
     +THRUGHOST
+	damage (20)
+	speed 20
 }
 
 actor Hellknight2 : Hellknight replaces Hellknight
@@ -174,6 +212,7 @@ actor Hellknight2 : Hellknight replaces Hellknight
     DamageFactor "DragonClaw", 1.6
     PainChance "MightyBoot", 255
     BloodColor darkolivegreen
+	bloodtype "NobleBlood"
     +DONTRIP
     +NOTDMATCH
     +NOICEDEATH
@@ -197,7 +236,39 @@ actor Hellknight2 : Hellknight replaces Hellknight
 
       Death:
         TNT1 A 0 A_GiveToTarget("KillCount",1)
-        goto "Super::Death"
+			TNT1 A 0 A_Jump(112,"Death2","Death2","Death3")
+			BOS2 I 8
+			BOS2 J 0 A_Scream
+			BOS2 JJJJJJJJ 1 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(-6,26),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,200)
+			BOS2 KKKKKKKK 1 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(-6,20),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,140)
+			Goto Super::Death+3
+		Death2:
+			BOS5 P 6 
+			BOS5 Q 0 A_Scream 
+			BOS5 QQQQQQ 1 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(-6,26),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,90)
+			BOS5 R 6 A_Fall 
+			BOS5 STU 6 
+			TNT1 AAAAAAAA 0 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(-6,12),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,90)
+			BOS5 V -1 
+			Stop
+		Death3:
+			BOS6 P 5 A_Recoil(4)
+			BOS6 Q 5 A_Scream
+			TNT1 AAA 0 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(6,20),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,90)
+			BOS6 R 5 A_Fall
+			BOS6 S 6
+			TNT1 AAAAAAA 0 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(-6,12),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,90)
+			BOS6 TU 8
+			BOS6 V -1
+			Stop
+		XDeath:
+			BOXZ P 5
+			TNT1 AAAAAAAAAAAAA 0 A_SpawnItemEx("NobleBlood",random(-4,4),random(-6,6),random(-6,12),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,90)
+			BOXZ Q 5 A_XScream
+			BOXZ R 5 A_NoBlocking
+			BOXZ STUVW 5
+			BOXZ X -1
+			Stop
 
       Pain.MightyBoot:
         TNT1 A 0 A_ChangeFlag("NOPAIN",1)
@@ -209,7 +280,15 @@ actor Hellknight2 : Hellknight replaces Hellknight
 
       Missile:
         TNT1 A 0 A_ChangeFlag("NOPAIN",0)
-        goto "Super::Missile"
+			BOS2 EF 8 A_FaceTarget
+			BOS2 GGG 2 A_BruisAttack
+			BOS2 G 2
+			Goto See
+      Melee:
+			BOS2 EF 8 A_FaceTarget
+			BOS2 GGG 2 A_BruisAttack
+			BOS2 G 2
+			Goto See
 
       Death.ZorchPistol:
 

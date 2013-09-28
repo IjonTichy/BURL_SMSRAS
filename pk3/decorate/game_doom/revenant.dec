@@ -6,6 +6,8 @@ actor Revenant2 : Revenant replaces Revenant
     PainChance "MightyBoot", 255
     +NOTDMATCH
     +NOICEDEATH
+  Bloodtype "LowBloodSplatter"
+RadiusDamageFactor 0.5 // WHOOPSIE I GUESS I ACCIDENTALLY GOT THIS WRONG OH WELL
     states
     {
       Death.DukeExplosive:
@@ -131,6 +133,14 @@ actor Revenant2 : Revenant replaces Revenant
         SKEL L 1 A_IceGuyDie
         TNT1 A -1
         stop
+
+  XDeath:
+    SKEL R 5
+    SKEL S 5 A_XScream
+    SKEL T 5 A_NoBlocking
+    SKEL UVWX 5
+    SKEL Y -1
+    Stop
     }
 }
 
@@ -149,8 +159,15 @@ actor RevenantTracerDumbfire : RevenantTracer
 
 actor RevenantTracerHoming : RevenantTracer
 {
+     Health 50
+    RadiusDamageFactor 0 
     Decal RevenantScorch
-    -THRUGHOST
+    +THRUGHOST
+    +SHOOTABLE
+    -NOBLOCKMAP
+    +NOBLOOD
+    Mass 0x7FFFFFFF
+    RadiusDamageFactor 0.0
     DamageType "DoomTheseGuysAreTheBest"
     States
 	{

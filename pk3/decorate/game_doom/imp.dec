@@ -5,8 +5,13 @@ actor DoomImp2 : DoomImp replaces DoomImp
     DamageFactor "CorvusCrossbow", 1.1
     DamageFactor "DragonClaw", 1.5
     PainChance "MightyBoot", 255
+  Speed 11
     states
     {
+  See:
+    TROO AABCCDABBCDD 2 A_Chase
+    Loop
+
       Death.DukeDamage:
 
       Death.DukePistol:
@@ -22,7 +27,26 @@ actor DoomImp2 : DoomImp replaces DoomImp
 
       Death:
         TNT1 A 0 A_GiveToTarget("KillCount",1)
-        goto "Super::Death"
+	TNT1 A 0 A_FaceTarget
+	TNT1 A 0 A_Jump(128,"Death2","Death3")
+	TNT1 A 0 A_Recoil(4)
+	TNT1 A 0 ThrustThingZ(0,21,0,1)
+	Goto Super::Death
+  Death2:
+	TNT1 A 0 ThrustThingZ(0,14,0,1)
+    TRO2 A 6 A_Recoil(7)
+    TRO2 B 5 A_Scream
+    TRO2 CD 4
+    TRO2 E 4 A_Fall
+    TRO2 F -1
+    Stop
+  Death3:
+    TRO2 V 7
+    TRO2 W 6 A_Scream
+    TRO2 X 5
+    TRO2 Y 4 A_Fall
+    TRO2 Z -1
+    Stop
 
       Death.DukeExplosive:
       Death.DukeSpectral:
@@ -44,6 +68,7 @@ actor DoomImp2 : DoomImp replaces DoomImp
 
       XDeath:
         TNT1 A 0 A_GiveToTarget("KillCount",1)
+	TNT1 AAAAAAAAAAAAAA 0 A_SpawnItemEx("NewBloodSplatter",0,0,random(-6,12),momx*random(1,7)*0.1,momy*random(1,7)*0.1,momz*random(1,7)*0.1,0,0,110)
         goto "Super::XDeath"
 
       Pain.MightyBoot:
