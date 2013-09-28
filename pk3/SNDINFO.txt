@@ -1330,3 +1330,11 @@ $alias BURL/chaingunfire2       doomguy/pistol
 
 $limit BURL/chaingunfire     0
 $limit BURL/chaingunfire2    0
+
+
+BURL/FUCK1                      sounds/BURL/FUCKYOURSELF_1.ogg
+BURL/FUCK2                      sounds/BURL/FUCKYOURSELF_2.ogg
+BURL/FUCK3                      sounds/BURL/FUCKYOURSELF_3.ogg
+BURL/FUCK4                      sounds/BURL/FUCKYOURSELF_4.ogg
+
+$random BURL/FUCKYOURSELF   { BURL/FUCK1 BURL/FUCK2 BURL/FUCK3 BURL/FUCK4 }

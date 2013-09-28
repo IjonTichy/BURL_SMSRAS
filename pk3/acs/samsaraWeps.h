@@ -199,7 +199,7 @@ int InstagibWeapons[CLASSCOUNT] =
     "Golden Desert Eagle",
     "SPNKR-25 Auto Cannon",
     "Rocket Powered Impaler",
-    "LOLIUNO",
+    "FUCK YOURSELF",
 };
 
 int ClassScripts[CLASSCOUNT][SLOTCOUNT] = 

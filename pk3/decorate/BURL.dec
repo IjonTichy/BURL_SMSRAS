@@ -22,3 +22,4 @@ actor BURLEVERYONE: PowerDamage
 
 #include "decorate/BURL/unique.dec"
 #include "decorate/BURL/vorpalblade.dec"
+#include "decorate/BURL/instagib.dec"

@@ -206,7 +206,13 @@ function int magnitudeTwo(int x, int y)
 
 function int magnitudeTwo_f(int x, int y)
 {
-    return sqrt(FixedMul(x, x) + FixedMul(y, y));
+    int len, ang;
+
+    ang = VectorAngle(x, y);
+    if (((ang + 0.125) % 0.5) > 0.25) { len = FixedDiv(y, sin(ang)); }
+    else { len = FixedDiv(x, cos(ang)); }
+
+    return len;
 }
 
 function int magnitudeThree(int x, int y, int z)
