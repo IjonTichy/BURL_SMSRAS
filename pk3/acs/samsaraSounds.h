@@ -96,6 +96,18 @@ int ClassPickupSounds[CLASSCOUNT][SLOTCOUNT] =
         "quakeweps/quadget",
         "quakeweps/weaponget",
     },
+    {
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+    },
 };
 
 int ClassDropSounds[CLASSCOUNT][SLOTCOUNT] = 
@@ -196,6 +208,18 @@ int ClassDropSounds[CLASSCOUNT][SLOTCOUNT] =
         "quakeweps/quadget",
         "quakeweps/itemget",
     },
+    {
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+        "doomguy/weaponget",
+    },
 };
 
 int ClassUniqueSounds[CLASSCOUNT] = 
@@ -208,6 +232,7 @@ int ClassUniqueSounds[CLASSCOUNT] =
     "duke/itemget",
     "marathon/itemget",
     "quakeweps/weaponget",
+    "doomguy/itemget",
 };
 
 int PunchDrunkUniqueSounds[CLASSCOUNT] = 
@@ -220,4 +245,5 @@ int PunchDrunkUniqueSounds[CLASSCOUNT] =
     "duke/itemget",
     "marathon/itemget",
     "quakeweps/weaponget",
+    "doomguy/itemget",
 };
