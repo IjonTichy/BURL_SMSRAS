@@ -141,7 +141,7 @@ actor CacodemonBall2 : CacodemonBall replaces CacodemonBall
 	fastspeed 30
 }
 
-Actor Cacoballoon : Cakeodemon {
+Actor Cacoballoon : Cacodemon2 {
 	SeeSound ""
 	DeathSound ""
 	bouncefactor 0.85
