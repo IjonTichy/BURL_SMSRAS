@@ -35,6 +35,7 @@ actor SamsaraUniquePickup1: CustomInventory
         Dukeguy:  DKJT A 35 A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         Marathon: AWPN A 35 A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         Quake:    QLSC Z 35 A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
+        BURL:     DGBZ A 35 A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         
         DoomSpecial:      UNIQ D 35 bright A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         ChexSpecial:      UNIQ C 35 bright A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
@@ -44,6 +45,7 @@ actor SamsaraUniquePickup1: CustomInventory
         DukeSpecial:      UNIQ E 35 bright A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         MarathonSpecial:  UNIQ I 35 bright A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         QuakeSpecial: 	  UNIQ T 35 bright A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
+        BURLSPECIAL:      UNIQ D 35 bright A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         
         DoomPunchdrunk:     DGBZ A 35 A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         ChexPunchdrunk:     CBRK ABCD 8 A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
@@ -53,6 +55,7 @@ actor SamsaraUniquePickup1: CustomInventory
         DukePunchdrunk:     UNIQ N 35 A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         MarathonPunchdrunk: MRNF Z 35 A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         QuakePunchdrunk:    UNIQ P 35 A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
+        BURLPUNCHDRUNK:     DGBZ A 35 A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         
         DoomPDSpecial:      UNIQ D 35 bright A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         ChexPDSpecial:      UNIQ C 35 bright A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
@@ -62,6 +65,7 @@ actor SamsaraUniquePickup1: CustomInventory
         DukePDSpecial:      UNIQ M 35 bright A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         MarathonPDSpecial:  UNIQ L 35 bright A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         QuakePDSpecial: 	UNIQ O 35 bright A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
+        BURLPDSPECIAL:      DGBZ A 35 A_ChangeFlag("FLOATBOB", 0)   goto SpawnLoop
         
       Pickup:
         TNT1 A 0 A_JumpIf(ACS_ExecuteWithResult(231), "PickupSuccess")
