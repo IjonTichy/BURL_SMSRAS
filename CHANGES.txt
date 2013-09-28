@@ -6,3 +6,4 @@ CHANGES FROM BURL TUMD:
 - Everyone else does 50% more damage, to match up to BURL TUMD. This, and the above, will probably not apply for deathmatch. Something else will.
 - The pistol has been nerfed. Infinite ammo makes the thing far too powerful for a pistol.
 - The thrown chainsaw hitbox has been shrunk so that it doesn't immediately hit the ground if you have your back to a wall or you're at a low ceiling.
+- The rocket launcher uses 2 ammo 3 per shot. 700 damage for one ammo 3 was just far, FAR too much.
