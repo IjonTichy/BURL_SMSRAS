@@ -177,7 +177,7 @@ int ClassWeapons[CLASSCOUNT][SLOTCOUNT][CHOICECOUNT] =
 
     {   // BURL TUMD
         {"Demonwhacker",                    "",             "",             "", ""},
-        {"Eager Beaver",                    "Clip",         "",             "", ""},
+        {"Accurate Bullet Gun",             "Clip",         "",             "", ""},
         {"Bullet Gun",                      "",             "",             "", ""},
         {"Shiny Shell Spitter",             "Shell",        "",             "", ""},
         {"Recoil Launcher",                 "Shell",        "",             "", ""},

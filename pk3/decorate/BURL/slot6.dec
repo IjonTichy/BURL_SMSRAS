@@ -1,0 +1,175 @@
+actor "Toy Gun Barrel": PlasmaRifle
+{
+    Weapon.AmmoType2 "Cell"
+    Weapon.AmmoUse2 20
+
+    AttackSound "doomguy/plasmaf"
+
+    States
+    {
+      Select:
+        DPLS A 0 A_Raise
+        DPLS A 1 A_Raise
+        Loop
+
+      Deselect:
+        DPLS A 0 A_Lower
+        DPLS A 1 A_Lower
+        Loop
+
+      Ready:
+        DPLS A 1 A_WeaponReady
+        loop
+
+      Fire:
+        TNT1 A 0 A_JumpIfInventory("PowerBAHZERKER",1,"FireBERSERK")
+        DPLS A 0 A_GunFlash
+        DPLS A 3 A_FireCustomMissile("PlasmaBrawl")
+        DPLS D 1 A_Refire
+        DPLS EF 2 A_Refire
+        DPLS GF 3 A_Refire
+        DPLS EDCB 2 A_Refire
+		DPLS A 1 A_Refire
+        goto Ready
+
+      FireBERSERK:
+        DPLS A 0 A_GunFlash
+        DPLS A 2 A_FireCustomMissile("PlasmaBrawl")
+        DPLS A 2 A_FireCustomMissile("PlasmaBrawl")
+        DPLS A 3 A_FireCustomMissile("PlasmaBrawl")
+        DPLS DEF 1 A_Refire
+        DPLS GF 3 A_Refire
+        DPLS EDCB 1 A_Refire
+		DPLS A 1 A_Refire
+        goto Ready
+
+      AltFire:
+        DPLS A 0 A_FireCustomMissile("Meltablast")
+        DPLS A 3 A_GunFlash
+        DPLS B 20
+        goto Ready
+
+      Flash:
+        DPLF A 1 bright A_Light1
+        DPLF B 1 bright A_Light2
+        goto LightDone
+
+      Spawn:
+        WPLS A -1
+        stop
+    }
+}
+
+actor PlasmaBrawl : PlasmaBall
+{
+    damage (25)
+    speed 40
+    States 
+    {
+      Spawn:
+        DPLM A 1 bright A_SpawnItem("PlasmaTrailA")
+        DPLM C 1 bright A_SpawnItem("PlasmaTrailC")
+        DPLM B 1 bright A_SpawnItem("PlasmaTrailB")
+        DPLM D 1 Bright A_SpawnItem("PlasmaTrailD")
+        loop
+
+      Death:
+        DPLE ABCDE 4 bright
+        stop
+    }
+}
+
+actor PlasmaTrailA
+{
+    +NOINTERACTION
+    +CLIENTSIDEONLY
+    +NOGRAVITY
+    alpha 0.80
+    scale 0.333
+    renderstyle translucent
+    states
+    {
+      Spawn:
+        DPLM A 1 bright A_FadeOut(0.1)
+        loop
+    }
+}
+
+actor PlasmaTrailB : PlasmaTrailA
+{
+    states
+    {
+      Spawn:
+        DPLM B 1 bright A_FadeOut(0.1)
+        loop
+    }
+}
+
+actor PlasmaTrailC : PlasmaTrailA
+{
+    states
+    {
+      Spawn:
+        DPLM C 1 bright A_FadeOut(0.1)
+        loop
+    }
+}
+
+actor PlasmaTrailD : PlasmaTrailA
+{	
+    states
+    {
+      Spawn:
+        DPLM D 1 bright A_FadeOut(0.1)
+        loop
+    }
+}
+
+actor MeltaBlast : BURLEXPLOSION
+{
+    speed 48
+    +ripper
+    height 1
+    radius 1
+    states
+    {
+      Spawn:
+        TNT1 A 0 A_PlaySound("doomguy/rocklx")
+        TNT1 A 0 A_Explode(26, 26, 0)
+        TNT1 A 2 A_SpawnItemEx("BURLEXPLOSION6")
+        TNT1 A 0 A_PlaySound("doomguy/rocklx")
+        TNT1 A 0 A_Explode(51, 51, 0)
+        TNT1 A 2 A_SpawnItemEx("BURLEXPLOSION5")
+        TNT1 A 0 A_PlaySound("doomguy/rocklx")
+        TNT1 A 0 A_Explode(77, 77, 0)
+        TNT1 A 2 A_SpawnItemEx("BURLEXPLOSION4")
+        TNT1 A 0 A_PlaySound("doomguy/rocklx")
+        TNT1 A 0 A_Explode(102, 102, 0)		
+        TNT1 A 2 A_SpawnItemEx("BURLEXPLOSION3")
+        TNT1 A 0 A_PlaySound("doomguy/rocklx")
+        TNT1 A 0 A_Explode(128, 128, 0)
+        TNT1 A 2 A_SpawnItemEx("BURLEXPLOSION2")
+        TNT1 A 0 A_PlaySound("doomguy/rocklx")
+        stop
+    }
+}
+
+actor BURLEXPLOSION3 : BURLEXPLOSION2
+{
+    scale 0.8
+}
+
+actor BURLEXPLOSION4 : BURLEXPLOSION2
+{
+    scale 0.6
+}
+
+actor BURLEXPLOSION5 : BURLEXPLOSION2
+{
+    scale 0.4
+}
+
+actor BURLEXPLOSION6 : BURLEXPLOSION2
+{
+    scale 0.2
+}

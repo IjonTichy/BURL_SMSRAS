@@ -1,5 +1,6 @@
 CHANGES FROM BURL TUMD:
 
+- Well obviously the weapon names are sillier.
 - You start with the pistol silencer.
 - The chainsaw comes with an assault rifle sweet jesus.
 - BURL TUMD takes 30% more damage, to balance his... kind of insane damage output.

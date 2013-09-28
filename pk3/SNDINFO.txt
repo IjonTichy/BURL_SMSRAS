@@ -1325,3 +1325,6 @@ BURL/ssgfire2                   sounds/BURL/DSDSHTGN.flac
 
 BURL/chaingunfire               sounds/BURL/DSCHNGN
 $alias BURL/chaingunfire2       doomguy/pistol
+
+$limit BURL/chaingunfire     0
+$limit BURL/chaingunfire2    0

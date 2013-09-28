@@ -16,5 +16,7 @@ actor BURLEVERYONE: PowerDamage
 #include "decorate/BURL/slot3.dec"
 #include "decorate/BURL/slot4.dec"
 #include "decorate/BURL/slot5.dec"
+#include "decorate/BURL/slot6.dec"
+#include "decorate/BURL/slot7.dec"
 
 #include "decorate/BURL/unique.dec"
