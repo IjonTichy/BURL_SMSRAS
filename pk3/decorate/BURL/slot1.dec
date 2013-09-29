@@ -3,6 +3,7 @@ actor "Eager Beaver": Chainsaw
     obituary "%o couldn't escape %k's chainsaw."
     inventory.pickupmessage "Chainsaw! The great communicator!"
     weapon.slotnumber 1
+    +UNDROPPABLE
     states
     {
       Fire:

@@ -9,6 +9,7 @@ actor "Bullet Gun": Pistol
     +NOAUTOFIRE
     +NOALERT
     attacksound ""
+    +UNDROPPABLE
     states
     {
       Select:

@@ -3,6 +3,7 @@ actor "Shiny Shell Spitter": Shotgun
     Weapon.SelectionOrder 300
     weapon.kickback 500
     attacksound ""
+    +UNDROPPABLE
     states
     {
       Select:

@@ -2,6 +2,7 @@ actor "It shoots green": BFG9000
 {
     -WEAPON.NOAUTOFIRE
     -WEAPON.NOAUTOAIM
+    +UNDROPPABLE
     States
     {
       Select:

@@ -7,6 +7,7 @@ actor "Sharper Demonwhacker": Weapon
     +EXTREMEDEATH
     +CHEATNOTWEAPON
     
+    +UNDROPPABLE
     States
     {
       Spawn:

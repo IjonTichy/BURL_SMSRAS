@@ -4,6 +4,7 @@ actor "Recoil Launcher": SuperShotgun
     attacksound ""
     Weapon.SelectionOrder 400
     weapon.kickback 750
+    +UNDROPPABLE
     states
     {
       Select:

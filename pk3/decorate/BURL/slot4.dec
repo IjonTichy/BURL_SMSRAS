@@ -3,6 +3,7 @@ actor "Super Bullet Gun": Chaingun
     Weapon.SelectionOrder 350
     weapon.kickback 250
     attacksound ""
+    +UNDROPPABLE
     states
     {
       Select:

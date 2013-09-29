@@ -8,6 +8,7 @@ actor Demonwhacker: Weapon
     Weapon.SelectionOrder 5000
     AttackSound "weapons/vblhit"
 
+    +UNDROPPABLE
     states
     {
       Select:

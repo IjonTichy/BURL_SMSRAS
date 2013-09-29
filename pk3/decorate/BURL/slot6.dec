@@ -5,6 +5,7 @@ actor "Toy Gun Barrel": PlasmaRifle
 
     AttackSound "doomguy/plasmaf"
 
+    +UNDROPPABLE
     States
     {
       Select:

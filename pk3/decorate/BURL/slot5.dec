@@ -5,6 +5,7 @@ actor "RORKCT LANWCHR": RocketLauncher
 
     Weapon.AmmoUse 2
 
+    +UNDROPPABLE
     states
     {
       Select:

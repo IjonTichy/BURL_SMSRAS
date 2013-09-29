@@ -8,6 +8,7 @@ actor "Accurate Bullet Gun": Pistol
     Weapon.SelectionOrder 700
     attacksound ""
     inventory.pickupmessage "Picked up an assault rifle."
+    +UNDROPPABLE
     states
     {
       Spawn:
