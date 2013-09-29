@@ -1,6 +1,8 @@
 actor NewBloodSplatter : Blood
 {
     +CLIENTSIDEONLY
+    VSpeed 0.1
+
 	states
 	{
 	Spawn:
@@ -28,6 +30,7 @@ actor LowBloodSplatter : NewBloodSplatter
 actor NewBloodSplatter2 : Blood
 {
     +CLIENTSIDEONLY
+    VSpeed 0.1
 
 	alpha 0.75
 	scale 0.75
@@ -47,6 +50,7 @@ actor BloodPlane : Blood
 	-NOGRAVITY
 	-NOCLIP
     +CLIENTSIDEONLY
+    VSpeed 0.1
 	states
 	{
 	Spawn:
