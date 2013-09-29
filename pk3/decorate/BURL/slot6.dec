@@ -46,7 +46,11 @@ actor "Toy Gun Barrel": PlasmaRifle
       AltFire:
         DPLS A 0 A_FireCustomMissile("Meltablast")
         DPLS A 3 A_GunFlash
-        DPLS B 20
+        DPLS D 1 
+        DPLS EF 2 
+        DPLS GF 3 
+        DPLS EDCB 2 
+		DPLS A 1 
         goto Ready
 
       Flash:
