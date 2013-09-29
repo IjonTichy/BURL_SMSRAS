@@ -78,5 +78,9 @@ actor "Shiny Shell Spitter": Shotgun
         SHTF A 2 bright offset(0, 32) A_Light1
         SHTF B 1 bright offset(0, 32) A_Light2
         goto LightDone
+
+      Spawn:
+        WSHT A -1
+        stop
     }
 }

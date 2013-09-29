@@ -93,6 +93,10 @@ actor "Super Bullet Gun": Chaingun
       Flash2:
         BCGF B 2 bright A_Light2
         goto LightDone
+
+      Spawn:
+        WCGN A -1
+        stop
     }
 }
 

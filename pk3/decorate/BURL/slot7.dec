@@ -30,6 +30,10 @@ actor "It shoots green": BFG9000
         DBFG B 8 A_FireCustomMissile("BFGBowl")
         DBFG B 16 A_ReFire
         Goto Ready
+
+      Spawn:
+        WBFG A -1
+        stop
     }
 }
 

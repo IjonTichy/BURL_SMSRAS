@@ -71,5 +71,9 @@ actor "Recoil Launcher": SuperShotgun
         BSG2 I 3 bright A_Light1
         BSG2 J 3 bright A_Light2
         Goto LightDone
+
+      Spawn:
+        WSSG A -1
+        stop
     }
 }

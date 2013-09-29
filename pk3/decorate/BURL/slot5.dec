@@ -66,6 +66,10 @@ actor "RORKCT LANWCHR": RocketLauncher
         DMSF C 2 bright A_Light2
         DMSF DE 3 bright
         Goto LightDone
+
+      Spawn:
+        WDRL A -1
+        stop
     }
 }
 

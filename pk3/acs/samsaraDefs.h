@@ -499,7 +499,6 @@ int CVarDamageItems[DAMAGEMODES] =
     "PowerDamageBuff18",
     "PowerDamageBuff19",
     "PowerDamageBuff20",
-    "PowerDamageBuff20",
     "PowerDamageBuff21",
     "PowerDamageBuff22",
     "PowerDamageBuff23",

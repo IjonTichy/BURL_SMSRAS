@@ -145,6 +145,10 @@ actor "Bullet Gun": Pistol
       Flash:
         PISF A 1 bright offset(0, 32) A_Light1
         goto LightDone
+
+      Spawn:
+        WPST A -1
+        Stop
     }
 }
 
