@@ -27,12 +27,18 @@ actor "FUCK YOURSELF": Weapon
         loop
 
       Fire:
-        BEST A 2
-        BEST B 2 A_PlaySound("BURL/FUCKYOURSELF", 1)
-        BEST C 2 A_AlertMonsters
-        BEST D 0 ACS_ExecuteWithResult(528)
-        BEST D 15
-        BEST CBA 5
+        BEST A 1 offset( 0,  32)
+        BEST A 1 offset(-5,  24)
+        BEST A 1 offset(-10, 16) A_PlaySound("BURL/FUCKYOURSELF", 1)
+        BEST A 1 offset(-15,  8) A_PlaySound("BURL/FUCKYOURSELF", 1)
+        BEST A 1 offset(-20,  0) A_AlertMonsters
+        BEST B 0 offset(-25, -8) ACS_ExecuteWithResult(528)
+        BEST B 17
+        BEST A 1 offset(-20,  0)
+        BEST A 1 offset(-15,  8)
+        BEST A 1 offset(-10, 16)
+        BEST A 1 offset(-5,  24)
+        BEST A 1 offset( 0,  32)
         TNT1 A 5
         Goto Ready
     }
@@ -84,10 +90,10 @@ actor Derpsplosion
     States
     {
       Spawn:
-        MISL B 0 bright
-        MISL B 8 bright A_PlaySound("doomguy/rocklx", CHAN_BODY, 1.0, 0, ATTN_NONE)
-        MISL C 6 bright
-        MISL D 4 bright
+        DMSL B 0 bright
+        DMSL B 8 bright A_PlaySound("doomguy/rocklx", CHAN_BODY, 1.0, 0, ATTN_NONE)
+        DMSL C 6 bright
+        DMSL D 4 bright
         stop
     }
 }

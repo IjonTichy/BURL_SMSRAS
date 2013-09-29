@@ -3,7 +3,6 @@ actor IAMBURLTUMD: Boolean {}
 actor BURLSAM: PlayerPawn
 {
     Player.DisplayName "BURL_TUMD"
-    Player.CrouchSprite "DGYC"
     Player.Face "DGY"
     BloodColor "Red"
     Player.StartItem "Bullet Gun", 1
@@ -39,24 +38,24 @@ actor BURLSAM: PlayerPawn
     States
     {
       Spawn:
-        DGUY A -1
+        BURL A -1
         Loop
 
       See:
-        DGUY ABCD 4 
+        BURL ABCD 4 
         Loop
 
       Missile:
-        DGUY E 12 
+        BURL E 12 
         Goto Spawn
 
       Melee:
-        DGUY F 6 BRIGHT
+        BURL F 6 BRIGHT
         Goto Missile
 
       Pain:
-        DGUY G 4 
-        DGUY G 4 A_Pain
+        BURL G 4 
+        BURL G 4 A_Pain
         Goto Spawn
 
       Death.HexGreenFire:
@@ -73,27 +72,27 @@ actor BURLSAM: PlayerPawn
         stop
 
       Death:
-        DGUY H 10
-        DGUY I 10 A_PlayerScream
-        DGUY J 10 A_NoBlocking
-        DGUY KLM 10
-        DGUY N -1
+        BURL H 10
+        BURL I 10 A_PlayerScream
+        BURL J 10 A_NoBlocking
+        BURL KLM 10
+        BURL N -1
         Stop
 
       XDeath:
-        DGUY O 5
-        DGUY P 5 A_XScream
-        DGUY Q 5 A_NoBlocking
-        DGUY RSTUV 5
-        DGUY W -1
+        BURL O 5
+        BURL P 5 A_XScream
+        BURL Q 5 A_NoBlocking
+        BURL RSTUV 5
+        BURL W -1
         Stop
 
       Death.CorvusGrimBallista:
-        DGUY O 5
-        DGUY P 5 A_PlaySoundEx("*falling",CHAN_VOICE,0,0)
-        DGUY Q 5 A_NoBlocking
-        DGUY RSTUV 5
-        DGUY W -1
+        BURL O 5
+        BURL P 5 A_PlaySoundEx("*falling",CHAN_VOICE,0,0)
+        BURL Q 5 A_NoBlocking
+        BURL RSTUV 5
+        BURL W -1
         Stop
 
       Death.ZorchPistol:
@@ -102,20 +101,20 @@ actor BURLSAM: PlayerPawn
       Death.ZorchKamikaze:
       Death.PhasingZorch:
       Death.ZorchSpectral:
-        DGUY G 0 A_Stop
+        BURL G 0 A_Stop
         TNT1 A 0 A_PlaySoundEx("chex/zorch","soundslot5",0,0)
-        DGUY G 3 A_SpawnItem("ZorchEffectSmall")
-        DGUY G 3 A_SetTranslucent(0.9,0)
-        DGUY G 0 A_PlayerScream
-        DGUY G 3 A_SetTranslucent(0.8,0)
-        DGUY G 0 A_NoBlocking
-        DGUY G 3 A_SetTranslucent(0.7,0)
-        DGUY G 3 A_SetTranslucent(0.6,0)
-        DGUY G 3 A_SetTranslucent(0.5,0)
-        DGUY G 3 A_SetTranslucent(0.4,0)
-        DGUY G 3 A_SetTranslucent(0.3,0)
-        DGUY G 3 A_SetTranslucent(0.2,0)
-        DGUY G 3 A_SetTranslucent(0.1,0)
+        BURL G 3 A_SpawnItem("ZorchEffectSmall")
+        BURL G 3 A_SetTranslucent(0.9,0)
+        BURL G 0 A_PlayerScream
+        BURL G 3 A_SetTranslucent(0.8,0)
+        BURL G 0 A_NoBlocking
+        BURL G 3 A_SetTranslucent(0.7,0)
+        BURL G 3 A_SetTranslucent(0.6,0)
+        BURL G 3 A_SetTranslucent(0.5,0)
+        BURL G 3 A_SetTranslucent(0.4,0)
+        BURL G 3 A_SetTranslucent(0.3,0)
+        BURL G 3 A_SetTranslucent(0.2,0)
+        BURL G 3 A_SetTranslucent(0.1,0)
         ACLO E 1 A_SetTranslucent(1,0)
         ACLO E -1
         stop
@@ -124,7 +123,7 @@ actor BURLSAM: PlayerPawn
         TNT1 A 0
         TNT1 A 0 A_ChangeFlag("THRUSPECIES",1)
         TNT1 A 0 A_ChangeFlag("DONTBLAST",1)
-        DGUY A 1
+        BURL A 1
         goto Spawn
 
       Death.DukeDamage:
@@ -140,7 +139,7 @@ actor BURLSAM: PlayerPawn
         goto Death.DukeDamage
 
       DukeGibStart:
-	DGUY G 1
+	BURL G 1
         TNT1 A 0 A_UnsetSolid
         TNT1 A 0 A_PlaySound("duke/enemygib")
         TNT1 A 0 A_SpawnDebris("DukeGibs1")
@@ -163,30 +162,30 @@ actor BURLSAM: PlayerPawn
 
       Death.Ice:
 	TNT1 A 0 A_PlayWeaponSound("misc/freeze")
-        DGUY Z 70 A_NoBlocking//A_GenericFreezeDeath
-        DGUY Z 0 A_SetTranslucent(0,0)
+        BURL Z 70 A_NoBlocking//A_GenericFreezeDeath
+        BURL Z 0 A_SetTranslucent(0,0)
         TNT1 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA 0 A_SpawnItemEx("IceChunk2",random(-1,1),random(-1,1),random(8,48),random(-2,2),random(-2,2),random(1,6))
-        DGUY Z 1 A_PlayWeaponSound("misc/icebreak")//A_FreezeDeathChunks
-        DGUY Z -1
+        BURL Z 1 A_PlayWeaponSound("misc/icebreak")//A_FreezeDeathChunks
+        BURL Z -1
         stop
-        //DGUY G 5 A_GenericFreezeDeath
-        //DGUY G 1 A_FreezeDeathChunks
+        //BURL G 5 A_GenericFreezeDeath
+        //BURL G 1 A_FreezeDeathChunks
         //Wait
 
       Pain.MightyBoot:
-	    DGUY G 1 ACS_ExecuteAlways(312, 0, 25, 5, 24)
-        DGUY G 1 A_PlaySoundEx("duke/kickhit","body",0,0)
+	    BURL G 1 ACS_ExecuteAlways(312, 0, 25, 5, 24)
+        BURL G 1 A_PlaySoundEx("duke/kickhit","body",0,0)
         TNT1 A 0 A_Recoil(12)
-        DGUY G 6 A_Pain
+        BURL G 6 A_Pain
         Goto See
 		
 	  Pain.MarathonStun:
         TNT1 A 0 A_Stop
-	    DGUY G 1 ACS_ExecuteAlways(312, 0, 25, 5, 100)
+	    BURL G 1 ACS_ExecuteAlways(312, 0, 25, 5, 100)
 		TNT1 A 0 A_GiveInventory("NothingSpeed")
 		TNT1 A 0 A_SetBlend("White",0.9,105)
-        DGUY G 1 A_PlaySoundEx("marathon/tech50/stun","body",0,0)
-        DGUY G 6 A_Pain
+        BURL G 1 A_PlaySoundEx("marathon/tech50/stun","body",0,0)
+        BURL G 6 A_Pain
         Goto See
     }
 }
