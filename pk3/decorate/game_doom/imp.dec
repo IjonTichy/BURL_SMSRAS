@@ -89,9 +89,13 @@ actor DoomImp2 : DoomImp replaces DoomImp
         TROO H 70
         Goto See
 
-      Missile:
+  Missile:
         TNT1 A 0 A_ChangeFlag("NOPAIN",0)
-        goto "Super::Missile"
+
+  Melee:
+    TROO EF 8 A_FaceTarget
+    TROO G 6 A_TroopAttack
+    Goto See
 
       Death.ZorchPistol:
 
