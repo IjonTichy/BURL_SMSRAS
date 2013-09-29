@@ -1,5 +1,6 @@
 actor NewBloodSplatter : Blood
 {
+    +CLIENTSIDEONLY
 	states
 	{
 	Spawn:
@@ -12,6 +13,8 @@ actor NewBloodSplatter : Blood
 
 actor LowBloodSplatter : NewBloodSplatter
 {
+    +CLIENTSIDEONLY
+
 	states
 	{
 	Spawn:
@@ -24,6 +27,8 @@ actor LowBloodSplatter : NewBloodSplatter
 
 actor NewBloodSplatter2 : Blood
 {
+    +CLIENTSIDEONLY
+
 	alpha 0.75
 	scale 0.75
 }
@@ -41,6 +46,7 @@ actor BloodPlane : Blood
 	PROJECTILE
 	-NOGRAVITY
 	-NOCLIP
+    +CLIENTSIDEONLY
 	states
 	{
 	Spawn:
